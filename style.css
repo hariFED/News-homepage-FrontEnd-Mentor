@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Off-white {
+  color: hsl(36, 100%, 99%) hsl(233, 8%, 79%) hsl(236, 13%, 42%)
+    hsl(240, 100%, 5%) #f15e50 hsl(35, 77%, 62%);
+}
+
+@layer components {
+  .nav-items {
+    @apply px-5 hover:text-[#f15e50] cursor-pointer;
+  }
+  .side-headings {
+    @apply text-white mt-8 font-bold text-xl;
+  }
+  .side-content {
+    @apply text-[#c5c6ce] mt-2 text-[0.92em] font-light;
+  }
+  .snippet-news-h1 {
+    @apply pb-2 text-4xl text-[#c5c6ce] font-bold;
+  }
+  .snippet-news-h2 {
+    @apply pt-2 pb-2 text-[#00001a]  font-extrabold text-base hover:text-[#f15e50] cursor-pointer;
+  }
+  .snippet-news-h3 {
+    @apply text-[#5d5f79] tracking-normal text-[0.92em] font-light leading-6;
+  }
+}
